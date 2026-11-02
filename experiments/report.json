@@ -1,0 +1,209 @@
+{
+  "project": "cancer",
+  "task": "classification",
+  "seed": 42,
+  "folds": 5,
+  "scoring": "f1_macro",
+  "cv_selection_score": 0.9743196962898362,
+  "selected_model": "LogisticRegression",
+  "leaderboard": [
+    {
+      "model": "DummyClassifier",
+      "parameters": {},
+      "cv_score": 0.38513513513513514,
+      "cv_std": 0.0
+    },
+    {
+      "model": "LogisticRegression",
+      "parameters": {
+        "model__C": 0.1
+      },
+      "cv_score": 0.9672845988697742,
+      "cv_std": 0.013459768871801732
+    },
+    {
+      "model": "LogisticRegression",
+      "parameters": {
+        "model__C": 1
+      },
+      "cv_score": 0.9743196962898362,
+      "cv_std": 0.013498717342572557
+    },
+    {
+      "model": "LogisticRegression",
+      "parameters": {
+        "model__C": 10
+      },
+      "cv_score": 0.9600790778512499,
+      "cv_std": 0.01764601434856221
+    },
+    {
+      "model": "RandomForestClassifier",
+      "parameters": {
+        "model__max_depth": null,
+        "model__min_samples_leaf": 2
+      },
+      "cv_score": 0.9532927971209866,
+      "cv_std": 0.016129763370821407
+    },
+    {
+      "model": "RandomForestClassifier",
+      "parameters": {
+        "model__max_depth": null,
+        "model__min_samples_leaf": 5
+      },
+      "cv_score": 0.9417587148586433,
+      "cv_std": 0.01595548028825
+    },
+    {
+      "model": "RandomForestClassifier",
+      "parameters": {
+        "model__max_depth": 12,
+        "model__min_samples_leaf": 2
+      },
+      "cv_score": 0.9532927971209866,
+      "cv_std": 0.016129763370821407
+    },
+    {
+      "model": "RandomForestClassifier",
+      "parameters": {
+        "model__max_depth": 12,
+        "model__min_samples_leaf": 5
+      },
+      "cv_score": 0.9417587148586433,
+      "cv_std": 0.01595548028825
+    },
+    {
+      "model": "ExtraTreesClassifier",
+      "parameters": {
+        "model__max_depth": null,
+        "model__min_samples_leaf": 2
+      },
+      "cv_score": 0.967265792773832,
+      "cv_std": 0.02596070388812308
+    },
+    {
+      "model": "ExtraTreesClassifier",
+      "parameters": {
+        "model__max_depth": null,
+        "model__min_samples_leaf": 5
+      },
+      "cv_score": 0.9628241484366156,
+      "cv_std": 0.02237273926584826
+    },
+    {
+      "model": "ExtraTreesClassifier",
+      "parameters": {
+        "model__max_depth": 12,
+        "model__min_samples_leaf": 2
+      },
+      "cv_score": 0.969676839146979,
+      "cv_std": 0.021473293777323228
+    },
+    {
+      "model": "ExtraTreesClassifier",
+      "parameters": {
+        "model__max_depth": 12,
+        "model__min_samples_leaf": 5
+      },
+      "cv_score": 0.9605170175285224,
+      "cv_std": 0.02141552087321371
+    }
+  ],
+  "holdout": {
+    "accuracy": 0.956140350877193,
+    "balanced_accuracy": 0.9603174603174602,
+    "f1_macro": 0.9535338713621913,
+    "classification_report": {
+      "0": {
+        "precision": 0.9111111111111111,
+        "recall": 0.9761904761904762,
+        "f1-score": 0.9425287356321839,
+        "support": 42.0
+      },
+      "1": {
+        "precision": 0.9855072463768116,
+        "recall": 0.9444444444444444,
+        "f1-score": 0.9645390070921985,
+        "support": 72.0
+      },
+      "accuracy": 0.956140350877193,
+      "macro avg": {
+        "precision": 0.9483091787439614,
+        "recall": 0.9603174603174602,
+        "f1-score": 0.9535338713621913,
+        "support": 114.0
+      },
+      "weighted avg": {
+        "precision": 0.9580981439105009,
+        "recall": 0.956140350877193,
+        "f1-score": 0.9564299597121931,
+        "support": 114.0
+      }
+    },
+    "classes": [
+      0,
+      1
+    ],
+    "confusion_matrix": [
+      [
+        41,
+        1
+      ],
+      [
+        4,
+        68
+      ]
+    ],
+    "roc_auc": 0.9953703703703703,
+    "average_precision": 0.9970652078135953,
+    "positive_class": "1"
+  },
+  "train_rows": 455,
+  "test_rows": 114,
+  "input_rows": 569,
+  "missing_target_rows_removed": 0,
+  "missing_predictor_rows_removed": 0,
+  "grouped_split": false,
+  "group_column": null,
+  "features": [
+    "mean radius",
+    "mean texture",
+    "mean perimeter",
+    "mean area",
+    "mean smoothness",
+    "mean compactness",
+    "mean concavity",
+    "mean concave points",
+    "mean symmetry",
+    "mean fractal dimension",
+    "radius error",
+    "texture error",
+    "perimeter error",
+    "area error",
+    "smoothness error",
+    "compactness error",
+    "concavity error",
+    "concave points error",
+    "symmetry error",
+    "fractal dimension error",
+    "worst radius",
+    "worst texture",
+    "worst perimeter",
+    "worst area",
+    "worst smoothness",
+    "worst compactness",
+    "worst concavity",
+    "worst concave points",
+    "worst symmetry",
+    "worst fractal dimension"
+  ],
+  "data_fingerprint": "437523f7ff68c26a4b4b234db178a0d45de15ff98d06afa1fb9cee813553a9a4",
+  "versions": {
+    "python": "3.12.14",
+    "sklearn": "1.8.0",
+    "pandas": "2.2.3",
+    "numpy": "2.3.5"
+  },
+  "note": "CV scores select the model and are optimistic; holdout metrics are the final evaluation. Negative MAE scores are higher-is-better. Synthetic tests are not real-data benchmarks."
+}

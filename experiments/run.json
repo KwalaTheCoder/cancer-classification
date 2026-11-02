@@ -1,0 +1,10 @@
+{
+  "project": "cancer-classification",
+  "exit_code": 0,
+  "seconds": 7.1,
+  "data_file": "Cancer/cancer.csv",
+  "data_sha256": "b6dc1c915648e11e2e15e35c8b64107d9fefd1c9079215eb769ae9abd0c45a36",
+  "tuned": true,
+  "folds": 5,
+  "seed": 42
+}
