@@ -1,0 +1,8 @@
+{
+  "domain": "cancer",
+  "task": "classification",
+  "targets": [
+    "Outcome"
+  ],
+  "exclude": []
+}
